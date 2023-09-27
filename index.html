@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>squiggler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="squiggler.js"></script>
+    <script type="text/javascript">
+        function resquiggle(value) {
+            let x = Number(value)
+            if (x == x) {
+                document.getElementById("content").innerText = numberLiteral(x);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="number" oninput="resquiggle(this.value);" />
+    <pre id="content" style="white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;"></pre>
+</body>
+</html>
