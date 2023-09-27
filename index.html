@@ -17,6 +17,15 @@
 
 <body>
     <input type="number" oninput="resquiggle(this.value);" />
-    <pre id="content" style="white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;"></pre>
+    <pre id="content" style="white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">input a floating point number in the above textbox</pre>
+    <p>
+        Source: <a href="https://github.com/s5bug/squiggler">GitHub</a>
+    </p>
+    <p>
+        Credit to Snazz (<code>@worstpacifist</code>) for discovering the Squiggle Family, allowing for arbitrary bit-shifting.
+    </p>
+    <p>
+        This tool is able to generate a pattern for any possible Hex Casting number (IEEE754 <code>double</code>s without Infinity or NaN). First, a number with a desired mantissa is created using a subset of the Squiggle Family that maps to bitshifts of 3 bits (2-9 mapping to stable shifts of <code>000</code>-<code>111</code>). Then a Power Pyramid is added to the end to correct the exponent. This total control over both the mantissa and the exponent means that any arbitrary normal <code>double</code> can be constructed.
+    </p>
 </body>
 </html>
