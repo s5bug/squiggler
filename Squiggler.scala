@@ -3,13 +3,9 @@
 object Squiggler {
 
   val squiggleMapping = Map(
-    // for the first group, which will not have 3 whole bits
+    // for the first group, which will only have one bit
     "0" -> 2,
-    "1" -> 3,
-    "00" -> 2,
-    "01" -> 3,
-    "10" -> 4,
-    "11" -> 5,
+    "1" -> 4,
     // all the rest of the groups
     "000" -> 2,
     "001" -> 3,
