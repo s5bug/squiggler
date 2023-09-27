@@ -5,7 +5,7 @@ object Squiggler {
   val squiggleMapping = Map(
     // for the first group, which will only have one bit
     "0" -> 2,
-    "1" -> 4,
+    "1" -> 6,
     // all the rest of the groups
     "000" -> 2,
     "001" -> 3,
